@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>{% block title %}Page Default Title{% endblock %}</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+        {% block footer %} &copy; Copyright 2022. {%- endblock %}
+    </div>
+</body>
+</html>
